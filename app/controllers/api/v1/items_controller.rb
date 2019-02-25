@@ -23,8 +23,10 @@ end
     @item = Item.new(item_params)
 
     if @item.save
+      
       # respond_to? :api, :v1, @hotel
       render json: @item
+        
     end
   end
 
